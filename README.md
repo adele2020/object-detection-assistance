@@ -1,8 +1,14 @@
 # Object Detection Assistance
+
+
 ## 앱 설명
+
 사칙연산 함수 프로그램으로 DevOps 실습
 
+
+
 ## 앱 사용법
+
 1. git clone
 
   ```
@@ -21,15 +27,18 @@
   $ python3 start_oda_app.py
   ```
 
-4. 앱 실행 
-  **POST - submit 실행**
+4. 앱 실행  
+  POST - submit 실행  
 
-  http://0,0,0,0:5000/calculator
+  `http://0.0.0.0:5000/calculator`   
 
-  **GET** 
-  http://0,0,0,0:5000/calculator?arg1=2&arg2=3&op=plus
+  GET  
+  `http://0.0.0.0:5000/calculator?arg1=2&arg2=3&op=plus`  
+
+
 
 ## 테스트 방법
+
 사칙연산 함수 테스트
 
 ```
