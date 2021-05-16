@@ -5,9 +5,6 @@ from oda_app.functions import plus, minus, multiply, division
 def test_plus():
     assert plus(1,2) == 3
 
-def test_plus_none():
-    assert plus(None, 2) == 2
-
 def test_minus():
     assert minus(1,2) == -1.0
 
