@@ -28,12 +28,18 @@
   ```
 
 4. 앱 실행  
+
+  ```
   POST - submit 실행  
+  http://0.0.0.0:5000/calculator   
+  ```
 
-  `http://0.0.0.0:5000/calculator`   
-
+  ```
   GET  
-  `http://0.0.0.0:5000/calculator?arg1=2&arg2=3&op=plus`  
+  http://0.0.0.0:5000/calculator?arg1=2&arg2=3&op=plus
+  ```
+
+  
 
 
 
