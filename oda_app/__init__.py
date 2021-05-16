@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, flash, json
-from oda_app.functions import plus, minus, multiply, division
+from oda_app.functions import plus, minus, multiply, division, fn_sqrt
 
 app = Flask(__name__)
 app.debug = True
@@ -20,7 +20,7 @@ def calculator():
     arg1 = request.values.get("arg1")
     arg2 = request.values.get("arg2")
 
-    
+
     if op == "plus":
         result = plus(arg1, arg2)
         flash(f"더하기 계산 결과 : {result}")
@@ -33,8 +33,11 @@ def calculator():
     elif op == "division":
         result = division(arg1, arg2)
         flash(f"나누기 계산 결과 : {result}")
+    elif op == "sqrt":
+        result = fn_sqrt(arg1)
+        flash(f"제곱근 계산 결과 : {result}")
     else:
         if request.method == 'POST':
             flash("연산자가 없습니다.")
-    
+
     return render_template("calculator.html")

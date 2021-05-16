@@ -14,5 +14,7 @@ def test_multiply():
 def test_division():
     assert division(1,2) == 0.5
 
-pytest.main()
+def test_sqrt():
+    assert sqrt(8000000) == 2828.427
 
+pytest.main()
