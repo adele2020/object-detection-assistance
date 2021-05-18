@@ -38,11 +38,6 @@
   GET  
   http://0.0.0.0:5000/calculator?arg1=2&arg2=3&op=plus
   ```
-
-  
-
-
-
 ## 테스트 방법
 
 사칙연산 함수 테스트
@@ -59,3 +54,13 @@
   $ pytest
 ```
 
+## Docker 사용법
+빌드
+```
+docker build -t object-detection-assistance .
+```
+
+실행
+```
+docker run -it object-detection-assistance
+```
